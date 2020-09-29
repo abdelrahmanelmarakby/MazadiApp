@@ -40,7 +40,7 @@ dependencies:
   file_picker: ^1.13.3
   flushbar: ^1.10.4
   quick_actions: ^0.3.0+1
-  webview_flutter: ^0.3.21
+
 
 
 dev_dependencies:

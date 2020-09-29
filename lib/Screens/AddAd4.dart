@@ -16,7 +16,6 @@ import 'AfterPay.dart';
 import 'Login.dart';
 import 'account.dart';
 
-List<String> categoryIDs = [""];
 var parentID = "0";
 
 class AddAd4 extends StatefulWidget {
@@ -52,31 +51,35 @@ class _AddAd4State extends State<AddAd4> {
                     itemCount: dropdown.manufacturers.length,
                     itemBuilder: (context, index) {
                       return Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 60),
-                        child: RaisedButton(
-                            child: Text(
-                              dropdown.manufacturers[index].name,
-                              style: GoogleFonts.cairo(
-                                  color: maincolor,
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            onPressed: () async {
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 60, vertical: 15),
+                        child: Container(
+                          height: 50,
+                          child: RaisedButton(
+                              child: Text(
+                                dropdown.manufacturers[index].name,
+                                style: GoogleFonts.cairo(
+                                    color: maincolor,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              onPressed: () async {
 //                                                categoryID = dropdown
 //                                                    .categories[index]
 //                                                    .categoryId;
-                              //  categoryID="";
-                              parentID =
-                                  dropdown.manufacturers[index].manufacturerId;
-                              manufacturerID = parentID;
-                              print(parentID);
+                                //  categoryID="";
+                                parentID = dropdown
+                                    .manufacturers[index].manufacturerId;
+                                manufacturerID = parentID;
+                                print(parentID);
 
-                              Manufacturer newDropDown =
-                                  await getManufucturer(categoryID, parentID);
+                                Manufacturer newDropDown =
+                                    await getManufucturer(categoryID, parentID);
 
-                              Navigator.pop(context);
-                              Navigator.pop(context);
-                            }),
+                                Navigator.pop(context);
+                                Navigator.pop(context);
+                              }),
+                        ),
                       );
                     },
                   ),

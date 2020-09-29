@@ -506,20 +506,8 @@ class _HomeState extends State<Home> {
           body: ListView(
             children: [
               Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      labelText: "ابحث قي مزادي",
-                      suffixIcon: Icon(Icons.search),
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20))),
-                ),
-              ),
-              Padding(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 5.0, horizontal: 20),
+                    const EdgeInsets.symmetric(vertical: 15.0, horizontal: 20),
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -616,7 +604,7 @@ class _HomeState extends State<Home> {
                             color: backcolor,
                             borderRadius: BorderRadius.circular(20)),
                         width: wide,
-                        height: high / 1.9,
+                        height: high / 1.25,
                         child: ListView.builder(
                             itemExtent: 120,
                             shrinkWrap: true,

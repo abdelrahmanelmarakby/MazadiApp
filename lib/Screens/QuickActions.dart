@@ -31,11 +31,11 @@ class _QuickActionsManagerState extends State<QuickActionsManager> {
       ShortcutItem(
           type: 'action_main',
           localizedTitle: "اضافة اعلان",
-          icon: Platform.isAndroid ? 'add' : 'QuickBox'),
+          icon: Platform.isAndroid ? 'add' : 'add'),
       ShortcutItem(
           type: 'action_help',
           localizedTitle: 'الرسائل',
-          icon: Platform.isAndroid ? "message" : 'QuickHeart')
+          icon: Platform.isAndroid ? "message" : 'message')
     ]);
   }
 

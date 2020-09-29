@@ -546,7 +546,7 @@ class _Product_DetailsState extends State<Product_Details> {
                                       Row(
                                         children: [
                                           Image.asset(
-                                            'assets/icons/person.png',
+                                            'assets/icons/home.png',
                                             width: wide / 20,
                                           ),
                                           Padding(
@@ -588,6 +588,23 @@ class _Product_DetailsState extends State<Product_Details> {
                                                 right: 8.0),
                                             child: Text(productDetails
                                                 .product.customerName),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Row(
+                                        children: [
+                                          Image.asset(
+                                            'assets/icons/money.png',
+                                            width: wide / 20,
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.only(
+                                                right: 8.0),
+                                            child: Text(
+                                                productDetails.product.price),
                                           ),
                                         ],
                                       ),
